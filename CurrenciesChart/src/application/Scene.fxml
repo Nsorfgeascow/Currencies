@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.chart.CategoryAxis?>
 <?import javafx.scene.chart.LineChart?>
 <?import javafx.scene.chart.NumberAxis?>
@@ -8,9 +12,9 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="626.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">         
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="628.0" prefWidth="1095.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">         
    <children>
-      <LineChart fx:id="lineChart" layoutX="120.0" prefHeight="400.0" prefWidth="480.0">
+      <LineChart fx:id="lineChart" layoutX="165.0" layoutY="14.0" prefHeight="598.0" prefWidth="913.0">
         <xAxis>
           <CategoryAxis fx:id="aDate" label="Data" side="BOTTOM" />
         </xAxis>
@@ -18,14 +22,16 @@
           <NumberAxis fx:id="aPrice" label="Cena" side="LEFT" />
         </yAxis>
       </LineChart>
-      <Button fx:id="drawChart" layoutX="23.0" layoutY="340.0" mnemonicParsing="false" onAction="#drawChart" text="Draw chart" />
-      <Label layoutX="14.0" layoutY="14.0" text="Kod waluty" />
-      <TextField fx:id="tCode" layoutX="15.0" layoutY="38.0" prefHeight="26.0" prefWidth="93.0" />
-      <TextField fx:id="tStartDate" layoutX="15.0" layoutY="91.0" prefHeight="26.0" prefWidth="93.0" />
-      <TextField fx:id="tEndDate" layoutX="15.0" layoutY="143.0" prefHeight="26.0" prefWidth="93.0" />
-      <Label layoutX="6.0" layoutY="64.0" prefHeight="16.0" prefWidth="116.0" text="Data początkowa" />
-      <Label layoutX="14.0" layoutY="117.0" text="Data końcowa" />
-      <Label layoutX="14.0" layoutY="230.0" prefHeight="46.0" prefWidth="215.0" text="Maksymalny zakres" />
-      <Label layoutX="14.0" layoutY="268.0" prefHeight="16.0" prefWidth="133.0" text="dat - 93 dni" />
+      <Button fx:id="drawChart" layoutX="16.0" layoutY="580.0" minHeight="25.0" minWidth="150.0" mnemonicParsing="false" onAction="#drawChart" text="Rysuj Wykres" />
+      <Label layoutX="16.0" layoutY="30.0" minHeight="25.0" minWidth="150.0" text="Kod waluty" />
+      <TextField fx:id="tCode" layoutX="16.0" layoutY="55.0" minWidth="150.0" prefHeight="26.0" prefWidth="93.0" />
+      <TextField fx:id="tStartDate" layoutX="16.0" layoutY="108.0" minWidth="150.0" prefHeight="26.0" prefWidth="93.0" />
+      <TextField fx:id="tEndDate" layoutX="16.0" layoutY="159.0" minWidth="150.0" prefHeight="26.0" prefWidth="93.0" />
+      <Label layoutX="16.0" layoutY="81.0" minHeight="25.0" minWidth="150.0" prefHeight="16.0" prefWidth="116.0" text="Data początkowa" />
+      <Label layoutX="16.0" layoutY="134.0" minHeight="25.0" minWidth="150.0" text="Data końcowa" />
+      <Label layoutX="16.0" layoutY="314.0" minHeight="25.0" minWidth="150.0" prefHeight="25.0" prefWidth="150.0" text="Maksymalny zakres" />
+      <Label layoutX="16.0" layoutY="339.0" minHeight="25.0" minWidth="150.0" prefHeight="16.0" prefWidth="133.0" text="dat - 93 dni" />
+      <Label layoutX="16.0" layoutY="224.0" minHeight="25.0" minWidth="150.0" prefHeight="16.0" prefWidth="106.0" text="Format daty:" />
+      <Label layoutX="16.0" layoutY="249.0" minHeight="25.0" minWidth="150.0" text="RRRR-MM-DD" />
    </children>
 </AnchorPane>
